@@ -5,6 +5,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
+import NewApp from './components/newapp';
 
 const API_KEY = 'AIzaSyBj7axV5Ep719GBzJKrTNgmPSBKzhlRBu4';
 
@@ -16,5 +17,14 @@ const App = () => {
     );
 }
 
+const App2 = () => {
+    return (
+        <div>
+            <NewApp/>
+        </div>
+    );
+}
+ReactDOM.render(<App2/>, document.querySelector('.newapp-container'));
 ReactDOM.render(<App/>, document.querySelector('.container'));
+
 
